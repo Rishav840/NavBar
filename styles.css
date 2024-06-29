@@ -143,6 +143,7 @@
   }
   .active span:nth-child(2){
     opacity: 0;
+    transform: rotateY(90deg);
   }
   .active span:nth-child(3){
     transform: rotate(-45deg) translateY(-11px);
