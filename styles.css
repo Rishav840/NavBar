@@ -47,6 +47,7 @@
 
 .link{
   position: relative;
+  display: inline-block;
 }
 
 .link::after{
@@ -73,58 +74,30 @@
 @media(max-width:991px){
 
 
-  
-  /* .menu-list{
-  
-    position: absolute;
-    top:100%;
-    left: 0%;
-    background-color: red;
-    width: 100%;
-    flex-direction: column;
-    overflow: hidden;
-    max-height: 0;
-    transition: 0.9s ease-in-out;
-  }
-
-  .menu-list.show{
-    max-height: 600px;
-    /* transition: 0.5s; 
-    
-  } */
 
     .menu-list {
-
-    list-style: none;
     transition: max-height 0.9s ease-in-out;
     overflow: hidden;
     max-height: 0;
     flex-direction: column;
-
-  }
-    .menu-list{
       position: absolute;
       top:100%;
       left: 0;
-    }
-    .menu-list {
+    
       width: 100%;
       background-color: red;
     }
 
-    .menu-list.show {
-      max-height: 300px; 
-    }
+    /*.menu-list.show {
+       max-height: none;  
+    }*/
 
-
-
-  
   button{
     display: none;
   }
 
   .burger-menu{
-  cursor: pointer;
+    cursor: pointer;
     display: inline-block;
   }
 
