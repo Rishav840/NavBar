@@ -35,14 +35,13 @@
   color: black;
   padding: 10px;
   display:block;
+  
 }
 
 
 .burger-menu{
   display: none;
 }
-
-
 
 
 .link{
@@ -57,7 +56,7 @@
   height: 1px;
   border-radius: 40px;
   right: 0;
-  bottom: 2px;
+  bottom: 3px;
   background: currentColor;
   transition: transform 0.7s ;
   transform-origin: right;
@@ -70,10 +69,25 @@
 
 }
 
+.active-link a {
+  color: red!important; 
+}
+.active-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 40px;
+  right: 0;
+  bottom: 3px;
+  background: currentColor;
+  transform-origin: left;
+  transform: scaleX(1);
+  color: red;
+}
 
-@media(max-width:991px){
 
-
+@media(max-width:600px){
 
     .menu-list {
     transition: max-height 0.9s ease-in-out;

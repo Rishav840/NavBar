@@ -9,6 +9,7 @@
 const burgerMenu = document.querySelector('.burger-menu');
 const menuList = document.querySelector('.menu-list');
 
+
 burgerMenu.addEventListener(("click"), () => {
     burgerMenu.classList.toggle("active");
     menuList.classList.toggle("show");
@@ -20,6 +21,16 @@ burgerMenu.addEventListener(("click"), () => {
     }
 });
 
+const menuLink = document.querySelectorAll('.menu-link');
+const navItems = document.querySelectorAll('.nav-item');
+menuLink.forEach((item) => {
+    item.addEventListener('click', () => {
+        menuLink.forEach((nav) => {
+            nav.classList.remove('active-link');
+        });
+        item.classList.add('active-link');
+    });
+});
 
 
 
