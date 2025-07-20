@@ -29,7 +29,13 @@ menuLink.forEach((item) => {
             nav.classList.remove('active-link');
         });
         item.classList.add('active-link');
-    });
+        if (window.innerWidth <= 600){
+        menuList.style.maxHeight = 0;
+        menuList.classList.toggle("show");
+        burgerMenu.classList.toggle("active");
+    }
+
+});
 });
 
 

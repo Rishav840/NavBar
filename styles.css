@@ -70,7 +70,7 @@
 }
 
 .active-link a {
-  color: red!important; 
+  color: purple!important; 
 }
 .active-link::after {
   content: "";
@@ -83,7 +83,7 @@
   background: currentColor;
   transform-origin: left;
   transform: scaleX(1);
-  color: red;
+  color: purple;
 }
 
 
